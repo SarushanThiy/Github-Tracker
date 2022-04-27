@@ -19,6 +19,11 @@ function RepoInfo() {
         console.log(error);
       }
     }
+    fetchRepo();
+  
+  }, [repo]);
+
+  useEffect(() => {
     async function fetchLanguages() {
       try {
         const specificLanguages = await fetch(
@@ -30,13 +35,13 @@ function RepoInfo() {
         console.log(error);
       }
     }
-    fetchRepo();
     fetchLanguages();
-  }, [repo]);
+
+  }, [thisRepo])
 
   const date = new Date(thisRepo.created_at).toDateString();
   const updatedLanguage = Object.keys(language);
-  console.log(updatedLanguage);
+  const finalLanguage = updatedLanguage.join(" ")
 
   return (
     <div className="repoMain">
@@ -45,7 +50,7 @@ function RepoInfo() {
       <p>Forks: {thisRepo.forks}</p>
       <p>Stargazers: {thisRepo.stargazers_count}</p>
       <p>Issues: {thisRepo.open_issues}</p>
-      <p>Languages: {Object.keys(language)}</p>
+      <p>Languages: {finalLanguage}</p>
       <button className="back-btn" onClick={() => navigate(-1)}>
         Back
       </button>
