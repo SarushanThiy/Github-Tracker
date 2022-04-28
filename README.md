@@ -16,3 +16,13 @@ A Github repository tracker using the Github API, where the user can input a use
 
 - React
 - Github API
+
+## Wins and Challenges
+
+### Wins
+
+- All fetch links work as expected
+
+### Challenges
+
+- Working with the issue of the Github API rate limit. Solved by using github and pair-programming.
