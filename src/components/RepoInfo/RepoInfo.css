@@ -22,6 +22,7 @@ h3 {
 
 p {
   margin-top: 5px;
+  font-weight:600;
 }
 
 .back-btn {
@@ -35,6 +36,6 @@ p {
 }
 
 .back-btn:hover {
-  background-color: rgb(211, 173, 246);
+  background-color: #A813FF;
   color: white;
 }
