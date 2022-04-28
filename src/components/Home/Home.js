@@ -50,7 +50,7 @@ function Home() {
           required
           placeholder="Enter Username Here"
         ></input>
-        <input type="submit"></input>
+        <input className="search-btn" type="submit"></input>
       </form>
 
       <div className="userInfo">

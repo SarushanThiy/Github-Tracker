@@ -2,6 +2,11 @@
   margin-top: 10px;
   margin-right: 5px;
   text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #bc34e5;
+  padding: 4px 0px;
+
 }
 
 h1 {
@@ -13,7 +18,22 @@ h3 {
 }
 
 h3:hover {
-  color: rgb(66, 66, 254);
+  color: rgb(174, 95, 248);
   cursor: pointer;
   font-size: 25px;
+}
+
+.search-btn {
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid rgb(164, 82, 240);
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 4px;
+    background-color: white;
+}
+
+.search-btn:hover {
+    background-color: rgb(211, 173, 246);
+    color: white;
 }
